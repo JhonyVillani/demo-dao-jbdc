@@ -41,6 +41,10 @@ public class Program {
 		seller.setName("Pedro Villani");
 		sellerDao.update(seller);
 		System.out.println("Update completed");
+		
+		System.out.println("\n=== TEST 6: seller delete ===");
+		sellerDao.deleteById(9);
+		System.out.println("Delete completed");
 	}
 
 }
